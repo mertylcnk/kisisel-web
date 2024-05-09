@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+        integrity="sha512-L7MWcK7FNPcwNqnLdZq86lTHYLdQqZaz5YcAgE+5cnGmlw8JT03QB2+oxL100UeB6RlzZLUxCGSS4/++mNZdxw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+
+    <style>
+        .login_page .login_page_grid {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .login_page img {
+            width: 100%;
+            height: 50vh;
+            object-fit: cover;
+            object-position: top;
+        }
+
+        .login_page .card {
+            background-color: white;
+        }
+
+        .login_page .card-body {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .login_page label {
+            color: goldenrod;
+            font-weight: 900;
+        }
+
+        .login_page h2 {
+            color: goldenrod;
+            font-weight: 900;
+        }
+    </style>
+</head>
+
+<body class="login_page">
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-md py-3">
+        <div class="container">
+            <a class="logo" href="index.html">Mert Yalçınkaya</a>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="cv.html">Öz Geçmiş</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="myCity.html">Şehrim</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="ourLegacy.html">Doğal Miras</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="myInterest.html">İlgi Alanlarım</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Bağlantı</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page_active" href="login.html">Giriş</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="main_content">
+        <!-- LOGIN PAGE -->
+        <div class="login_page_grid">
+            <div class="card" style="max-width: 500px;">
+                <div class="row">
+                    <div class="col-md">
+                        <form method="POST" action="login.php" class="card-body" onsubmit="return validateForm()">
+                            <h2 class="title mt-3 mb-5 text-center">
+                                Giriş Sayfası
+                            </h2>
+                            <div class="row form">
+                                <div class="col-12 mb-4">
+                                    <label name="yourName" for="yourName" class="form-label">kullanıcı adı</label>
+                                    <input type="text" class="form-control" id="yourName" name="yourName">
+                                    <p id="nameError" style="display: none; color: red;">Lütfen kullanıcı adınızı giriniz</p>
+                                </div>
+                                <div class="col-12 mb-4">
+                                    <label name="yourPassword" for="yourPassword" class="form-label">şifre</label>
+                                    <input type="password" class="form-control" id="yourPassword" name="yourPassword">
+                                    <p id="passwordError" style="display: none; color: red;">Lütfen şifrenizi girinz
+                                    </p>
+                                </div>
+                                <div class="col-12 mb-4">
+                                    <input type="checkbox" class="check me-2" id="btncheck1" autocomplete="off">
+                                    <label class="" for="btncheck1">Beni hatırla</label>
+                                </div>
+                                <div class="col-12 d-grid">
+                                    <button type="submit" class="btn btn-primary">Giriş</button>
+                                </div>
+                                <div class="col-12 mt-4">
+                                    <p class="text-center">Üye değil misin? <button
+                                            class="btn btn-outline-primary btn-sm ms-1">Kayıt ol</button> </p>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-3">
+                    <h6>Adres</h6>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.894500939616!2d30.323285315405883!3d40.74234687932866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14ccaded70ee240b%3A0xd81085b5551312fd!2sBilgisayar%20Ve%20Bili%C5%9Fim%20Bilimleri%20Fak%C3%BCltesi!5e0!3m2!1str!2str!4v1689771950496!5m2!1str!2str"
+                        width="400" height="200" margin-top="auto" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="col-md-3">
+                    <h6>Hakkımda</h6>
+                    <ul class="list_group">
+                        <li class="list-group-item">Şehirim.</li>
+                     
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h6>Ürünler</h6>
+                    <ul class="list_group">
+                        <li class="list-group-item">.</li>
+                        <li class="list-group-item>.</li>
+                   
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h6>Fiyatlandırma</h6>
+                    <ul class="list_group">
+                        <li class="list-group-item">Lorem, ipsum.</li>
+                        <li class="list-group-item">Lorem, ipsum.</li>
+                     
+                    </ul>
+                </div>
+            </div>
+            
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <script>
+        function validateForm() {
+            const username = document.getElementById('yourName').value;
+            const password = document.getElementById('yourPassword').value;
+            let valid = true;
+
+            if (username.trim() === '') {
+                document.getElementById('nameError').style.display = 'block';
+                valid = false;
+            } else {
+                document.getElementById('nameError').style.display = 'none';
+            }
+
+            if (password.trim() === '') {
+                document.getElementById('passwordError').style.display = 'block';
+                valid = false;
+            } else {
+                document.getElementById('passwordError').style.display = 'none';
+            }
+
+            return valid;
+        }
+    </script>
+</body>
+
+</html>
