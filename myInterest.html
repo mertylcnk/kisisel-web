@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+        integrity="sha512-L7MWcK7FNPcwNqnLdZq86lTHYLdQqZaz5YcAgE+5cnGmlw8JT03QB2+oxL100UeB6RlzZLUxCGSS4/++mNZdxw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+
+    <style>
+        .interests_page {
+            background-image: linear-gradient(to right, #071952, black);
+        }
+
+        .interests_page .hobies_content {
+            background-color: white;
+            /* height: 100vh; */
+        }
+
+        .interests_page .hobies_content h1,
+        h2,
+        h4 {
+            color: goldenrod;
+            font-weight: bolder;
+        }
+
+        .carousel-inner img {
+            height: 500px;
+            background-size: cover;
+        }
+    </style>
+
+</head>
+
+<body class="interests_page">
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-md py-3">
+        <div class="container">
+            <a class="logo" href="index.html">Mert Yalçınkaya</a>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="cv.html">Öz Geçmiş</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="myCity.html">Şehrim</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="ourLegacy.html">Doğal miras</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page_active" href="myInterest.html">İlgi Alanlarım</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Bağlantı</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html">Giriş</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="hobies_content container p-5">
+        <div class="container">
+            <h1>Hobilerim</h1>
+            <p>Hobiler, insanların boş zamanlarını keyif alarak geçirdiği, ilgi ve tutkuları doğrultusunda
+                gerçekleştirdikleri etkinliklerdir. Hobiler, rutin günlük yaşamın monotonluğundan kaçmak, stresi
+                azaltmak,
+                yeni beceriler edinmek ve ilgi duyduğu konularla daha derinlemesine bağlantı kurmak için önemli bir
+                fırsattır. Hobilerin çeşitliliği oldukça geniştir; spor aktiviteleri, el sanatları, müzik, okuma,
+                seyahat,
+                bahçecilik, yemek pişirme, fotoğrafçılık gibi pek çok alan hobiler arasında yer alır.</p> <br>
+            <p>Hobiler, kişisel gelişimi destekler ve yaratıcılığı artırırken, sosyal bağlar kurma ve ortak ilgi
+                alanlarına
+                sahip insanlarla iletişimi güçlendirir. Aynı zamanda, hobiler, stres ve endişeyle başa çıkmaya yardımcı
+                olabilir, zihni dinlendirir ve ruh hâlini iyileştirir. Hobilerin kişisel tatmin ve mutluluğa katkıda
+                bulunması, yaşam dengesini koruma ve kendini daha iyi hissetme açısından da büyük önem taşır.</p> <br>
+            <p>Her bireyin kendine özgü hobileri vardır ve hobiler, yaş, cinsiyet, kültürel farklılıklar ve coğrafi
+                konum
+                gibi faktörlere bağlı olarak değişiklik gösterebilir. Önemli olan, kişinin ilgi duyduğu ve keyif aldığı
+                bir
+                alanda zaman geçirerek kendini geliştirmesine, hayatını zenginleştirmesine ve mutlu bir yaşam sürmesine
+                olanak sağlamasıdır. Hobiler, yaşamın monotonluğundan kaçarken, insanları daha motive eder ve
+                yaratıcılığı
+                keşfetmeye, öğrenmeye ve büyümeye teşvik eder.</p> <br>
+        </div>
+
+        <div id="carouselExampleInterval" class="carousel slide " data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="10000">
+                    <img src="img/movie1.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="img/movie2.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/movie3.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <div class="container">
+            <h2 class="mt-3">Filmler:</h2>
+            <p>Filmler, sinema sanatının en güçlü ve etkileyici ifade biçimlerinden birini oluşturur. Sinema, görsel ve
+                işitsel unsurların birleşimi sayesinde hikayelerin, duyguların ve düşüncelerin izleyiciye aktarılmasını
+                sağlar. Her türden film, farklı hikaye anlatım teknikleriyle ve estetik yaklaşımlarla izleyicilere
+                kendine özgü deneyimler sunar. Dramatik yapılar, mizahi anlatılar, bilim kurgu dünyaları, aksiyon dolu
+                sahneler ve daha pek çok unsuru içeren filmler, izleyicileri farklı duygusal yolculuklara çıkarabilir.
+            </p> <br><br>
+
+            <div class="container hobies_content">
+                <div class="row" id="moviesContainer"></div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-3">
+                    <h6>Adres</h6>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.894500939616!2d30.323285315405883!3d40.74234687932866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14ccaded70ee240b%3A0xd81085b5551312fd!2sBilgisayar%20Ve%20Bili%C5%9Fim%20Bilimleri%20Fak%C3%BCltesi!5e0!3m2!1str!2str!4v1689771950496!5m2!1str!2str"
+                        width="400" height="200" margin-top="auto" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="col-md-3">
+                    <h6>hakkımda</h6>
+                    <ul class="list_group">
+                        <li class="list-group-item">Lorem, ipsum.</li>
+                        <li class="list-group-item">Lorem, ipsum.</li>
+                        <li class="list-group-item">Lorem, ipsum.</li>
+                        <li class="list-group-item">Lorem, ipsum.</li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h6>Ürünler</h6>
+                    <ul class="list_group">
+                        <li class="list-group-item">Lorem, ipsum.</li>
+                        <li class="list-group-item">Lorem, ipsum.</li>
+                        <li class="list-group-item">Lorem, ipsum.</li>
+                        <li class="list-group-item">Lorem, ipsum.</li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h6>Fiyatlandırma</h6>
+                    <ul class="list_group">
+                        <li class="list-group-item">Lorem, ipsum.</li>
+                        <li class="list-group-item">Lorem, ipsum.</li>
+                        <li class="list-group-item">Lorem, ipsum.</li>
+                        <li class="list-group-item">Lorem, ipsum.</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- <p class="my-1 text-center">Copyright &copy 2025 - Seyfi SUSUZ</p> -->
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous">
+        </script>
+
+    <script>
+        const apiKey = 'df9ccecefe83b29729cc06e4ccf19532';
+        const moviesContainer = document.getElementById('moviesContainer');
+
+        console.log(moviesContainer);
+
+        // Fetch top-rated movies using TMDb API.
+        fetch(`https://api.themoviedb.org/3/movie/top_rated?api_key=${apiKey}`)
+            .then(response => response.json())
+            .then(data => {
+                console.log(data);
+                // Check if data contains results.
+                if (data.results && data.results.length > 0) {
+                    // Display top-rated movies in Bootstrap cards.
+                    data.results.slice(0, 4).forEach(movie => {
+                        const card = document.createElement('div');
+                        card.classList.add('card', 'col-md-4', 'mb-4', "m-2");
+
+                        const img = document.createElement('img');
+                        img.src = `https://image.tmdb.org/t/p/w500/${movie.poster_path}`;
+                        img.alt = `${movie.title} Poster`;
+                        img.classList.add('card-img-top');
+
+                        const cardBody = document.createElement('div');
+                        cardBody.classList.add('card-body');
+
+                        const title = document.createElement('h5');
+                        title.classList.add('card-title');
+                        title.textContent = movie.title;
+
+                        const overview = document.createElement('p');
+                        overview.classList.add('card-text');
+                        overview.textContent = movie.overview;
+
+                        cardBody.appendChild(title);
+                        cardBody.appendChild(overview);
+
+                        card.appendChild(img);
+                        card.appendChild(cardBody);
+
+                        moviesContainer.appendChild(card);
+                    });
+                } else {
+                    moviesContainer.innerHTML = '<p>No top-rated movies found.</p>';
+                }
+            })
+            .catch(error => console.error('Error fetching movie data:', error));
+    </script>
+</body>
+
+</html>
