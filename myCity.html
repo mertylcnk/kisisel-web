@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+        integrity="sha512-L7MWcK7FNPcwNqnLdZq86lTHYLdQqZaz5YcAgE+5cnGmlw8JT03QB2+oxL100UeB6RlzZLUxCGSS4/++mNZdxw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+
+    <style>
+        .my_city {
+            background-image: linear-gradient(to left, #071952, black);
+        }
+
+        .my_city .content {
+            padding: 10px;
+            background-color: white;
+            border-radius: 5px;
+        }
+
+        .my_city .content h1 .my_city .content h4 {
+            color: goldenrod;
+            font-weight: 800;
+        }
+
+        .my_city .content h5 {
+            color: goldenrod;
+        }
+
+        .my_city .carousel {
+            padding: 10px;
+        }
+
+        .my_city .carousel-item img {
+            object-fit: cover;
+            object-position: top;
+            height: 70vh;
+        }
+
+        .my_city .content img {
+            object-fit: cover;
+            object-position: top;
+            height: 100%;
+        }
+
+        .my_city .carousel-caption {
+            backdrop-filter: blur(2px);
+            border-radius: 15px;
+        }
+    </style>
+</head>
+
+<body class="my_city">
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-md py-3">
+        <div class="container">
+            <a class="logo" href="index.html">Mert Yalçınkaya</a>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="cv.html">Öz Geçmiş</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page_active" href="myCity.html">Şehrim</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="ourLegacy.html">Doğal Miras</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="myInterest.html">İlgi Alanlarım</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Bağlantı</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html">Giriş</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- CAROUSEL -->
+    <div class="container-sm w-100 mb-5">
+        <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                    aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+                <a href="amasya/yaliboyu.html">
+                    <div class="carousel-item active">
+                        <img src="img/amasya1.jpeg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>
+                                <span class="btn btn-primary btn-lg">Yalıboyu Evleri</span>
+                            </h5>
+                            <p>Yalıboyu Evleri, Türkiye'nin Karadeniz Bölgesi'nde bulunan Amasya ilinin Yeşilırmak
+                                nehrinin kıyısında kuruludur. Amasya Evleri olarak da bilinen Yalıboyu Evleri,
+                                geleneksel Türk evleri örneklerindendir. Yalıboyu Evleri mimari dokusuyla Osmanlı
+                                döneminden izler taşır.</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="amasya/kral_kaya.html">
+                    <div class="carousel-item">
+                        <img src="img/amasya2.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>
+                                <span class="btn btn-primary btn-lg">Kral Kaya Mezarları</span>
+                            </h5>
+                            <p>Helenistik Dönem'de, Amasya’yı İÖ. 302’den İÖ. 26’ya kadar başkent olarak kullanan Pontus
+                                Krallarına ait olan Kral Kaya Mezarları, Amasya Kalesi eteklerinde düz bir duvar gibi
+                                dikine uzanan kalker kayalara oyularak yapılmıştır. Hatuniye Mahallesi’nin dar
+                                sokaklarından, tren yolunu geçerek çıkılan mezarların arasında, kayaya oyulmuş yollar ve
+                                merdivenler bulunmaktadır. Yeşilırmak Vadisi boyunca, irili ufaklı 21 mezar olduğu
+                                bilinmekle birlikte bunlardan sadece birkaç tanesi günümüze gelebilmiştir.</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="amasya/amasya_kalesi.html">
+                    <div class="carousel-item">
+                        <img src="img/amasya3.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>
+                                <span class="btn btn-primary btn-lg">Amasya Kalesi</span>
+                            </h5>
+                            <p>Amasya Kalesi, Amasya il merkezinin kuzeyini kaplayan Harşena Dağı üzerindedir. Harşena
+                                Kalesi adıyla da bilinir. Amasya Kalesi’nin üzerinde inşa edildiği kaya denizden 700
+                                metre Yeşilırmak’tan ise 300 metre yüksekte bulunmaktadır. Bazı tarihçilere göre kaleyi
+                                Pontus Kralı Mithridates yaptırmıştır. Bazılarına göre ise Kumandan Karsan veya Harsana
+                                yaptırdığı için kale Harşana/Harşena ismini almıştır.</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="amasya/cami.html">
+                    <div class="carousel-item">
+                        <img src="img/amasya4.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>
+                                <span class="btn btn-primary btn-lg">II. Bayezid Camii</span>
+                            </h5>
+                            <p>II. Bayezid Külliyesi 1485-1486 yılları arasında Osmanlı Sultanı II. Bâyezid’in
+                                talimatıyla Amasya Sancak Beyi Şehzade Ahmed tarafından yaptırılmıştır.</p>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- CONTENT -->
+    <div class="container-sm content mb-5">
+        <!-- scrollspy -->
+        <div class="row scrollspy">
+            
+
+            <div class="col-10">
+                <div data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-smooth-scroll="true"
+                    class="scrollspy-example-2" tabindex="0">
+                    <h1 class="mb-5">Amasya Hakkında Biraz Bilgi...</h1>
+                    <div id="item-1">
+                        <h4>1)</h4>
+                        <p>Amasya, Türkiye'nin Karadeniz Bölgesi'nde yer alan tarihi ve doğal güzellikleriyle ünlü bir
+                            şehirdir. Tarihi boyunca birçok medeniyete ev sahipliği yapmış olan Amasya, zengin kültürel
+                            mirasıyla dikkat çeker. Amasya'nın halkı, geleneksel el sanatlarıyla da ünlüdür. El dokuması
+                            halılar, bakır işlemeli ürünler ve el yapımı seramikler şehrin zanaat kültürünü yansıtır.
+                        </p>
+                    </div>
+                    <div id="item-1-1">
+                        <h5></h5>
+                        <p>Amasya, yeşil vadileri, etkileyici dağları ve hüzünlü Yeşilırmak Nehri'nin kıyısında yer alan
+                            büyüleyici bir şehirdir. Doğal güzellikleriyle doğaseverlerin ve fotoğrafçıların ilgisini
+                            çeker. Amasya, tarihî ve kültürel zenginlikleri kadar festivalleriyle de canlı bir şehirdir.
+                            Geleneksel Amasya Elma Festivali ve Uluslararası Amasya At Yarışları gibi etkinlikler yerli
+                            ve yabancı turistleri şehre çeker.
+                        </p>
+                    </div>
+                    <div id="item-1-2">
+                        <h5>2)</h5>
+                        <p>Tarihi boyunca Pers, Roma, Bizans ve Osmanlı gibi pek çok medeniyete ev sahipliği yapmış olan
+                            Amasya, bir açık hava müzesi gibi zengin tarihi kalıntılara ve yapılarına sahiptir.
+                            Amasya'nın yerel mutfağı da oldukça çeşitlidir. Cızlama, Molehiya çorbası, Pancar Çorbası ve
+                            Amasya Köftesi gibi lezzetler şehrin kendine özgü tatlarını yansıtır.</p>
+                    </div>
+                    <div id="item-2">
+                        <h4></h4>
+                        <p>Amasya Kalesi, şehrin yüksek bir tepesine konumlanmış tarihi bir kaledir ve panoramik
+                            manzarasıyla ziyaretçileri büyüler.Amasya, Türkiye'nin Karadeniz Bölgesi'nde yer alan tarihi
+                            ve doğal güzellikleriyle ünlü bir şehirdir. Tarihi boyunca birçok medeniyete ev sahipliği
+                            yapmış olan Amasya, zengin kültürel mirasıyla dikkat çeker. </p>
+                    </div>
+                    <div id="item-3">
+                        <h4>3)</h4>
+                        <p>Amasya'da gezilecek yerler arasında Hazeranlar Konağı, Şehzadeler Müzesi, Ferhat ile Şirin
+                            Mağarası ve Bayezid Camii gibi önemli tarihi yapılar yer alır.Amasya, yeşil vadileri,
+                            etkileyici dağları ve hüzünlü Yeşilırmak Nehri'nin kıyısında yer alan büyüleyici bir
+                            şehirdir. Doğal güzellikleriyle doğaseverlerin ve fotoğrafçıların ilgisini çeker.</p>
+                    </div>
+                    <div id="item-3-1">
+                        <h5></h5>
+                        <p>Yemyeşil ormanları ve serin yaylalarıyla ünlü Amasya, doğa turizmi açısından da oldukça
+                            zengin bir bölgedir.Tarihi boyunca Pers, Roma, Bizans ve Osmanlı gibi pek çok medeniyete ev
+                            sahipliği yapmış olan Amasya, bir açık hava müzesi gibi zengin tarihi kalıntılara ve
+                            yapılarına sahiptir.</p>
+                    </div>
+                    <div id="item-3-2">
+                        <h5></h5>
+                        <p>Amasya'nın meşhur elması, lezzeti ve kalitesiyle bilinir ve şehrin sembolik ürünlerinden
+                            biridir.Amasya Kalesi, şehrin yüksek bir tepesine konumlanmış tarihi bir kaledir ve
+                            panoramik manzarasıyla ziyaretçileri büyüler.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- content cards -->
+        
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-3">
+                    <h6>Address</h6>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.894500939616!2d30.323285315405883!3d40.74234687932866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14ccaded70ee240b%3A0xd81085b5551312fd!2sBilgisayar%20Ve%20Bili%C5%9Fim%20Bilimleri%20Fak%C3%BCltesi!5e0!3m2!1str!2str!4v1689771950496!5m2!1str!2str"
+                        width="400" height="200" margin-top="auto" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="col-md-3">
+                    <h6>About Us</h6>
+                    <ul class="list_group">
+                        <li class="list-group-item">Lorem, ipsum.</li>
+                        <li class="list-group-item">Lorem, ipsum.</li>
+                        <li class="list-group-item">Lorem, ipsum.</li>
+                        <li class="list-group-item">Lorem, ipsum.</li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h6>Products</h6>
+                    <ul class="list_group">
+                        <li class="list-group-item">Lorem, ipsum.</li>
+                        <li class="list-group-item">Lorem, ipsum.</li>
+                        <li class="list-group-item">Lorem, ipsum.</li>
+                        <li class="list-group-item">Lorem, ipsum.</li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h6>Pricing</h6>
+                    <ul class="list_group">
+                        <li class="list-group-item">Lorem, ipsum.</li>
+                        <li class="list-group-item">Lorem, ipsum.</li>
+                        <li class="list-group-item">Lorem, ipsum.</li>
+                        <li class="list-group-item">Lorem, ipsum.</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- <p class="my-1 text-center">Copyright &copy 2025 - Seyfi SUSUZ</p> -->
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
