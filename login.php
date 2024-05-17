@@ -4,8 +4,8 @@ ob_start();
 $yourName = $_POST['yourName'];
 $yourPassword = $_POST['yourPassword'];
 
-$correct_username = "g211210002@sakarya.edu.tr";
-$correct_password = "g211210002";
+$correct_username = "B231210401@sakarya.edu.tr";
+$correct_password = "B231210401";
 
 // Check if the input fields are empty
 if (empty($yourName) || empty($yourPassword)) {
@@ -16,7 +16,7 @@ if (empty($yourName) || empty($yourPassword)) {
 
 // If the inputs are not empty, proceed with login authentication
 if ($yourName == $correct_username && $yourPassword == $correct_password) {
-    echo "Hoşgeldiniz g211210002";
+    echo "Hoşgeldiniz b231210401";
     exit;
 } else {
     echo "E-mail veya şifre yanlış. Lütfen tekrar deneyiniz. Giriş sayfasına yönlendiriliyorsunuz...";
